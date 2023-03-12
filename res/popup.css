@@ -1,0 +1,52 @@
+body, html {
+    background-color:black;
+    color:white;
+    margin: 0px;
+    padding: 0px;
+}
+iframe#gptframe{
+    margin:0px;
+}
+iframe#gptframe, body, html{
+    width: 500px; height: 500px; overflow: hidden;
+}
+#header{
+	box-sizing: content-box;
+	text-align: left; font-family: Helvetica, Arial, sans-serif;
+	background: #fff; box-shadow: 0px 0px 40px rgba(1, 247, 255, 0.1);
+	font-size: 12px; color: #433;
+    margin:0px;
+}
+#header * {
+    line-height: 1.3; font-size: inherit; color: inherit;
+    font-weight: normal; font-style: normal; font-family: inherit;
+    cursor: default;
+}
+#header .App_minimize, #header .App_close, #header .App_plus{
+    display: block; cursor: pointer;
+    position: absolute; top: 0; right: 0; width: 32px; line-height: 20px; height: 20px;
+    font-size: 14px; text-align: center;
+    transition: 0.3s;
+}
+#header .App_minimize { right: 32px; background: #bbf; color: #068BAD; }
+#header .App_minimize:hover { background: #068BAD; color: #fff; }
+#header .App_minimize i {
+	display: block; cursor: pointer;
+}
+#header .App_plus { right: 64px; background: #bfb; color: #06AD68; }
+#header .App_plus:hover { background: #06AD68; color: #bfb; }
+#header .App_plus p {
+	display: block; cursor: pointer;
+}
+#header .App_close { color: #f00; background: #fdd; }
+#header .App_close:hover { color: #fff; background: #f00; }
+#header.App_logo { font-size: 15px; font-weight: bold; }
+#header .version { color: #bbb; }
+#header.minimized { width: 80px; height: 12px; }
+#header.minimized > * { display: none; }
+#header.minimized .App_minimize,
+#header.minimized .App_close { display: block; }
+#header.minimized .App_minimize i { display: inline-block; transform: rotate(-120deg); }
+
+
+

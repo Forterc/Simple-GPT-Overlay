@@ -7,6 +7,6 @@
         { "header": "x-frame-options", "operation": "remove" }
       ]
     },
-    "condition": { "urlFilter": "https://*.openai.com/*", "resourceTypes": ["main_frame"] }
+    "condition": { "urlFilter": "https://*.openai.com/*", "resourceTypes": ["main_frame", "sub_frame", "csp_report"] }
 }
 ]

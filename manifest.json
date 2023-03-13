@@ -1,5 +1,8 @@
 {
   "manifest_version": 3,
+  "background": {
+    "service_worker": "bg.js"
+  },
   "name": "Simple GPT Overlay",
   "description": "Simple ChatGPT integration in page. Login normally, then keep the session open in an overlay including previous questions.",
   "version": "2.0",
@@ -7,7 +10,7 @@
     "default_popup": "hello.html",
     "default_icon": "/icons/GPTChromized_24.png"
   },
-  "permissions": [ "declarativeNetRequest", "declarativeNetRequestFeedback"],
+  "permissions": [ "declarativeNetRequest", "declarativeNetRequestFeedback", "contextMenus", "storage", "scripting", "tabs"],
   "declarative_net_request" : {
     "rule_resources" : [{
       "id": "GPT_Iframe",
@@ -16,7 +19,10 @@
     }]
   },
   "host_permissions": [
-        "https://*.openai.com/*"
+        "https://*.openai.com/*",
+        "<all_urls>",
+        "http://*/*",
+        "https://*/*"
   ],
   "icons": {
     "128": "icons/GPTChromized_128.png",

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Simple GPT Overlay",
   "description": "Simple ChatGPT integration in page. Login normally, then keep the session open in an overlay including previous questions.",
-  "version": "1.1",
+  "version": "2.0",
   "action": {
     "default_popup": "hello.html",
     "default_icon": "/icons/GPTChromized_24.png"

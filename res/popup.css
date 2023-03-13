@@ -48,5 +48,7 @@ iframe#gptframe, body, html{
 #header.minimized .App_close { display: block; }
 #header.minimized .App_minimize i { display: inline-block; transform: rotate(-120deg); }
 
-
+#header a {
+    color:blue;
+}
 

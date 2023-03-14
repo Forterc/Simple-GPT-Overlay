@@ -4,13 +4,13 @@
     "service_worker": "bg.js"
   },
   "name": "Simple GPT Overlay",
-  "description": "Simple ChatGPT integration in page. Login normally, then keep the session open in an overlay including previous questions.",
+  "description": "Simple ChatGPT integration in page. Opens an overlay including previous questions. Right click to send marked text from the page.",
   "version": "2.0",
   "action": {
     "default_popup": "hello.html",
     "default_icon": "/icons/GPTChromized_24.png"
   },
-  "permissions": [ "declarativeNetRequest", "declarativeNetRequestFeedback", "contextMenus", "storage", "scripting", "tabs"],
+  "permissions": [ "declarativeNetRequest", "declarativeNetRequestFeedback", "contextMenus", "scripting", "tabs"],
   "declarative_net_request" : {
     "rule_resources" : [{
       "id": "GPT_Iframe",
